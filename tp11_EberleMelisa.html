@@ -11,16 +11,15 @@
 </head>
 <body>
 <div class="container">
-    <nav class="navbar navbar-light" style="background-color: white;">
+    <nav class="navbar navigation" style="background-color: #3F3F3F;">
          <a class="navbar-brand" href="#" id="logo">
-            <img src="./images/logo.svg" width="100" height="90" alt="">
+            <img src="./images/logo.jpg" width="100" height="90" alt="">
         </a>
-        <div class="der">
-            <a class="navbar-brand" href="#">Quienes somos</a>
-            <a class="navbar-brand" href="#">Como funciona</a>
-            <a class="navbar-brand" href="#">FAQS</a>
-            <button type="button" class="btn boton">Login</button>
-        </div>
+            <a href="#">Organización</a>
+            <a href="#">Personal</a>
+            <a href="#">Contacto</a>
+            <a href="#">Solicitar Proceso</a>
+            <button class="btnLogin-popup">Ingresar</button>
     </nav>
 </div> 
 
@@ -33,62 +32,36 @@
      <button type="button" class="btn boton">Comenzar</button>
 </div>
  
-<div class="tit-secundario text-center">
-    <p class="var1">CONOCENOS</p>
-    <h2>Quienes somos</h2><br>
-    <p>En <strong>Anima-T</strong> colaboramos con la construcción de un mundo mejor a partir de empoderar y habilitar a las personas para que alcancen su mejor versión.
-        A través de esta plataforma, acercamos clientes y profesionales, brindando un espacio de conexión para facilitar un proceso hacia el bienestar emocional, el logro de objetivos y el desarrollo personal, en cualquier momento y en cualquier lugar.
-    </p>
-</div>
+<div class="organizacion text-center">
+        <h2>Organización</h2><br>
+        <p>Venex es la empresa líder del mercado. No sólo se destaca por ofrecer la mayor variedad de componentes electrónicos del mundo sino
+        que a través de su plataforma digital brinda el mejor servicio al cliente. Con su interfaz de última generación,
+        todo es más fácil. Descripciones específicas de los productos, cuenta personal, consultas, y mucho más.
+        </p>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<div class="tit-secundario1 text-center">
-    <p class="var1">CÓMO FUNCIONA</p>
-    <h2>¿Buscas ayuda?</h2><br>
-    <ul class="pagination justify-content-center">
-    <li class="funcion">
-        <img src="./images/icono-preguntas.svg"><br>
-        <h2>.01</h2>
-        <p>Responde unas preguntas para conocer tu perfil y lo que buscás.</p>
-    </li>
-    <li class="funcion">
-        <img src="./images/icono-profesionales.svg"><br>
-        <h2>.02</h2>
-        <p>Accede al ranking de profesionales que construimos para ayudarte.</p>
-    </li>
-    <li class="funcion">
-        <img src="./images/icono-agenda.svg"><br>
-        <h2>.03</h2>
-        <p> Acuerda un encuentro virtual para comenzar tu proceso.</p>
-    </li>
-</ul>
-</div>
-
-<div class="rosa text-center">
-    <p class="var2">Si brindas ayuda y te interesa sumarte &nbsp &nbsp &nbsp <button type="button" class="btn btn-outline-light">Hacé click aquí</button></p>
-</div>
 
 <div class="tit-secundario text-center">
-    <p class="var1">CONOCENOS</p>
-    <h2>Preguntas frecuentes</h2><br>
+    <h2>Contacto</h2><br>
     <div class="row caja">
         <div class="col col-md-4" id="der">
-                    <form>
+                    <form id="form1" method="post" action="">
                         <div class="input-group">
                             <div class="input-group-prepend">
-                              <span class="input-group-text bi bi-person"></i>&nbsp Nombre y apellido</span>
+                              <span class="input-group-text bi bi-person" id="nombre"></i>&nbsp Nombre y apellido</span>
                             </div>
                             <input type="text" class="form-control">
                             <input type="text" class="form-control">
                           </div><br>
                           <div class="input-group">
                           <div class="input-group-prepend">
-                          <span class="input-group-text bi bi-envelope"></i>&nbsp Email</span>
+                          <span class="input-group-text bi bi-envelope" id="email"></i>&nbsp Email</span>
                         </div>
-                          <input type="text" class="form-control">
+                          <input type="email" class="form-control">
                         </div><br>
                         <div class="input-group">
                             <div class="input-group-prepend">
-                            <span class="input-group-text bi bi-telephone"></i>&nbsp Teléfono</span>
+                            <span class="input-group-text bi bi-telephone" id="telefono"></i>&nbsp Teléfono</span>
                           </div>
                             <input type="number" class="form-control">
                           </div><br>
@@ -108,24 +81,16 @@
                           </div>
                             <textarea cols="10" rows="2" name="comentario"></textarea>
                           </div><br>
-                          <button type="button" class="btn btn-success">Enviar consulta</button>
+                          <input type="submit" value="Enviar consulta" class="btn btn-success" id="boton_enviar">
+                          <div class="mensaje">
+                            <p id="banner-message"> Se envio su consulta</p>
+                          </div>
                       </form>
             </div>
-        <div class="col col-md-4" id="der">
-            <img src="./images/ilustracion-faqs.svg" class="img-fluid">
-        </div>
     </div>
 </div>
 
-<div class="banner-pricipal">
-    <img src="./images/banner-secundario.jpg" class="img-fluid" alt="Responsive image" width="100%" height="auto">
-    <div class="texto2 text-center">
-        <h5>Desarróllate hacia tus sueños, fácil, rápido y desde cualquier lugar</h5>
-        <button type="button" class="btn boton">Comenzar</button>
-   </div>
-</div>
-
-<div class="footer" style="background-color: #22193F;">
+<div class="footer" style="background-color: #9EBF24;">
     <div class="container-fluid" >
         <div class="row linea">
             <div class="col">
@@ -168,6 +133,8 @@
     9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-
     +sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
     
 </html>
