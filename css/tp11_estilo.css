@@ -27,69 +27,65 @@ body{
     background-color: #3F3F3F;
 }
 
-.navbar-brand{
-    font-size: 16px;
-    font-family: Nunito-Bold;
-    justify-content: right;
 
+.navbar {
+    padding: 1rem 0;
+}
+  
+
+.navbar-nav .nav-item {
+    margin-right: 1rem;
 }
 
-.navigation a {
-    position: relative;
-    font-size: 1.1em;
+  
+.navbar-nav .nav-link {
     color: #9EBF24;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
 }
 
-.navigation a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    background: #9EBF24;
-    border-radius: 5px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .5s;
-}
-
-.navigation a:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
-.navigation .btnLogin-popup {
-    width: 130px;
-    height: 50px;
-    background: #3F3F3F;
-    border: 2px solid #F2F2F2;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
+  
+.navbar-nav .nav-link:hover {
     color: #F2F2F2;
-    font-weight: 500;
-    margin-left: 40px;
-    transition: .5s;
+    border-color: #9EBF24;
+}
+  
+
+.navbar-nav .active {
+    font-weight: bold;
 }
 
-.navigation .btnLogin-popup:hover {
-    background: #9EBF24;
-    color: #162938;
+  
+.form-control {
+    background-color: #f2f2f2;
+    color: #000;
+    border: none;
+}
+
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+
+.btn-outline-success {
+    color: #9EBF24;
+    border-color: #9EBF24;
+}
+
+
+.btn-outline-success:hover {
+    background-color: #9EBF24;
+    color: #F2F2F2;
 }
 
 
 .boton{
-    background-color: #E21982;
-    color: white;
-    margin: #E21982;
+    background-color: #9EBF24;
+    color: #3F3F40;
+    margin: #F2F2F2;
     font-size: 16px;
     font-family: Nunito-Bold;
 }
+
 
 .texto1{
     text-align: center;
@@ -97,15 +93,21 @@ body{
     top: 400px;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #788C2E;
+    margin: #3f3f40;
     font-family: Nunito-Bold;
     font-size: 40px;
+    border-color: #F2F2F2;
+    border-width: 10px;
 }
+
+
 .bajada{
     font-family: osr;
     font-size: 22px;
     color: white;
 }
+
 
 .organizacion{
     background-color: #3F3F3F;
@@ -116,6 +118,7 @@ body{
     text-align: center;  
 }
 
+
 .tit-secundario{
     background-color: #E8E8E8;
     justify-content: center;
@@ -124,17 +127,20 @@ body{
     font-size: 28px;
 }
 
+
 .var1{
     color: #E21982;
     font-family: Nunito-extralight;
     font-size: 12px;
 }
 
+
 p{
     font-family: osr;
     font-size: 16px;
     
 }
+
 
 .tit-secundario1{
     background-color: white;
@@ -144,14 +150,17 @@ p{
     font-size: 28px;
 }
 
+
 .caja{
     justify-content: center;
 }
+
 
 .form1{
     font-family: osb;
     position: absolute;
 }
+
 
 .texto2{
     text-align: center;
@@ -164,6 +173,7 @@ p{
     font-size: 23px;
 }
 
+
 .enlace{
     font-family: Nunito-Bold;
     font-size: 14px;
@@ -171,10 +181,12 @@ p{
     margin-left: 53px;
 }
 
+
 .linea{
     padding: 35px;
 
 }
+
 
 .copy{
     font-size: 12px;
@@ -182,9 +194,11 @@ p{
     color: white;
 }
 
+
 .card-footer{
     border-color: white;
 }
+
 
 .iconos{
     color: white;
